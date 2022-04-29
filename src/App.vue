@@ -1,0 +1,30 @@
+<template>
+  <div id="app">
+    <h1 class="text-success">Titolo di prova <i class="fa-solid fa-circle-check"></i></h1>
+  </div>
+</template>
+
+<script>
+import "bootstrap"
+// import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+    // HelloWorld
+  }
+}
+</script>
+
+<style lang="scss">
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
