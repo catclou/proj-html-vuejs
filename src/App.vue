@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="d-flex flex-column">
     <!-- <h1 class="text-success">Titolo di prova <i class="fa-solid fa-circle-check"></i></h1> -->
     <HeaderComp/>
     <HeroFirst/>
