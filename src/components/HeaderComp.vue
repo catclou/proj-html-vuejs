@@ -8,11 +8,11 @@
         <nav class="h-100">
             <ul class="list-unstyled d-flex h-100">
                 <a href="#" id="home" class="ms-3 text-capitalize list-group-item">home</a>
-                <a href="#" class="ms-3 text-capitalize list-group-item text-white">who we are</a>
-                <a href="#" class="ms-3 text-capitalize list-group-item text-white">what we do</a>
-                <a href="#" class="ms-3 text-capitalize list-group-item text-white">Where We Work</a>
-                <a href="#" class="ms-3 text-capitalize list-group-item text-white">Careers <button class="text-uppercase btn btn-outline-warning btn-sm rounded ms-1">apply</button></a>
-                <a href="#" class="ms-3 text-capitalize list-group-item text-white">news</a>
+                <a href="#" class="ms-2 text-capitalize list-group-item text-white">who we are</a>
+                <a href="#" class="ms-2 text-capitalize list-group-item text-white">what we do</a>
+                <a href="#" class="ms-2 text-capitalize list-group-item text-white">Where We Work</a>
+                <a href="#" class="ms-2 text-capitalize list-group-item text-white">Careers <button class="text-uppercase btn btn-outline-warning btn-sm rounded ms-1">apply</button></a>
+                <a href="#" class="ms-2 text-capitalize list-group-item text-white">news</a>
                 <button id="get_in_touch" class="btn btn-warning btn-sm rounded-pill ms-3 text-uppercase text-white">get in touch now</button>
             </ul>
         </nav>
@@ -33,6 +33,7 @@ export default {
         width: 70%;
         align-self: center;
         margin: 10px;
+        padding-top: 5px;
         font-weight: 600;
 
         img {

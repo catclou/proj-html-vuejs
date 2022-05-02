@@ -1,27 +1,38 @@
 <template>
-    <div>
-        <span>child</span>
+    <div class="d-flex flex-column p-4 align-items-center justify-content-center">
+        <img :src="require('../../assets/img/' + path)" alt="" class="w-100">
+        <a :href="postLink" class="text-decoration-none fw-bold mt-3 mb-1 text-capitalize">{{postTitle}}</a>
+        <span class="mb-3">{{date}}</span>
+        <p class="lead">{{postSubtitle}}</p>
     </div>
 </template>
 
 <script>
-// import "bootstrap"
-// import HelloWorld from './components/HelloWorld.vue'
-
 export default {
     name: 'NewsPost',
-    components: {
-        // HelloWorld
-        // MeetCard
+    props: {
+        path: String,
+        postTitle: String,
+        postLink: String,
+        date: String,
+        postSubtitle: String
     }
 }
 </script>
 
 <style scoped lang="scss">
-// @import "bootstrap/dist/css/bootstrap.min.css";
-    div {
-        height: 30px!important;
-        width: 100px!important;
-        background-color: rgb(212, 32, 218);
+    a {
+        font-size: 1.1rem!important;
+        color: #ffa837!important;
+    }
+
+    span {
+        font-size: 0.8rem!important;
+        color: #606166;
+    }
+
+    p {
+        color: #606166;
+        font-size: 1rem!important;
     }
 </style>

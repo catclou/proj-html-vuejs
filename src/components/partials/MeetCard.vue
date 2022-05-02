@@ -1,27 +1,30 @@
 <template>
-    <div>
-        <span>child</span>
+    <div class="d-flex flex-column p-4 align-items-center justify-content-center">
+        <i :class="icon"></i>
+        <h3 class="fw-bold m-4">{{heading}}</h3>
+        <p class="w-75">{{paragraph}}</p>
     </div>
 </template>
 
 <script>
-// import "bootstrap"
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
     name: 'MeetCard',
-    components: {
-        // HelloWorld
-        // MeetCard
+    props: {
+            icon: String,
+            heading: String,
+            paragraph: String
     }
 }
 </script>
 
 <style scoped lang="scss">
-// @import "bootstrap/dist/css/bootstrap.min.css";
+
     div {
-        height: 30px!important;
-        width: 100px!important;
-        background-color: rgb(60, 218, 32);
+        background-color: white;
+
+        i {
+            color: #ffa837;
+        }
     }
 </style>

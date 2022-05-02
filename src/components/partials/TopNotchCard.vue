@@ -1,27 +1,33 @@
 <template>
-    <div>
-        <span>child</span>
+    <div class="d-flex flex-column p-2 pt-4 pb-4 align-items-center justify-content-center">
+        <i :class="icon"></i>
+        <h3 class="fw-bold m-4">{{heading}}</h3>
+        <p class="w-75">{{paragraph}}</p>
+        <a class="text-decoration-none" :href="href">Read More ></a>
     </div>
 </template>
 
 <script>
-// import "bootstrap"
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
     name: 'TopNotchCard',
-    components: {
-        // HelloWorld
-        // MeetCard
+    props: {
+            icon: String,
+            heading: String,
+            paragraph: String,
+            href: String
     }
 }
 </script>
 
 <style scoped lang="scss">
-// @import "bootstrap/dist/css/bootstrap.min.css";
+
     div {
-        height: 30px!important;
-        width: 100px!important;
-        background-color: rgb(60, 218, 32);
+        background-color: #071b50;
+
+        i, a {
+            color: #ffa837;
+        }
     }
+    
 </style>
