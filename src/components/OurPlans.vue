@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid d-flex flex-column p-5">
-        <div class="row d-flex flex-column align-items-center justify-content-between mx-auto textdark">
+        <div class="row d-flex flex-column align-items-center justify-content-between mx-auto text-dark">
             
             <!-- text container  -->
             <div class="d-flex flex-column align-items-center">
