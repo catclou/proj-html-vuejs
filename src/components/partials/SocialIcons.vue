@@ -1,27 +1,24 @@
 <template>
-    <div>
-        <span>child</span>
-    </div>
+    <a :href="href">
+        <i :class="icon"></i>
+    </a>
 </template>
 
 <script>
-// import "bootstrap"
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
     name: 'SocialIcons',
-    components: {
-        // HelloWorld
-        // MeetCard
+    props: {
+            icon: String,
+            href: String
     }
 }
 </script>
 
 <style scoped lang="scss">
-// @import "bootstrap/dist/css/bootstrap.min.css";
-    div {
-        height: 30px!important;
-        width: 100px!important;
-        background-color: rgb(60, 218, 32);
+
+    a:hover, i:hover {
+        color: #ffa837!important;
     }
+    
 </style>

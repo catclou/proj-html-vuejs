@@ -1,27 +1,26 @@
 <template>
-    <div>
-        <span>child</span>
-    </div>
+    <a href="#" :class="aspetto">{{listItem}}</a>
 </template>
 
 <script>
-// import "bootstrap"
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
     name: 'LiNavFooter',
-    components: {
-        // HelloWorld
-        // MeetCard
+    props: {
+            listItem: String,
+            aspetto: String
     }
 }
 </script>
 
 <style scoped lang="scss">
-// @import "bootstrap/dist/css/bootstrap.min.css";
-    div {
-        height: 30px!important;
-        width: 100px!important;
-        background-color: rgb(60, 218, 32);
+
+    a {
+        border: none;
     }
+
+    a:hover, i:hover, .home {
+            color: #ffa837!important;
+    }
+
 </style>
